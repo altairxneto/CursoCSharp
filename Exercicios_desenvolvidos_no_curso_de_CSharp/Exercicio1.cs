@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PrimeiroExercicio;
+using System;
 using System.Globalization;
 
 namespace PrimeiroExercicio {
