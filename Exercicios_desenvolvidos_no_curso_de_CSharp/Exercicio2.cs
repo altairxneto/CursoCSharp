@@ -3,7 +3,7 @@ using System.Globalization;
 
 namespace SegundoExercicio {
     public class Exercicio2 {
-        public static void Ex2() {
+        public void Ex2() {
             Console.WriteLine("Entre com seu nome completo:");
             string nome = Console.ReadLine();
 
@@ -20,11 +20,11 @@ namespace SegundoExercicio {
 
             string ultimoNome = vetorInformacoes[0];
             int idade = int.Parse(vetorInformacoes[1]);
-            double altura = double.Parse(vetorInformacoes[2]);
+            double altura = double.Parse(vetorInformacoes[2], CultureInfo.InvariantCulture);
 
             Console.WriteLine(nome);
             Console.WriteLine(quartos);
-            Console.WriteLine(produto);
+            Console.WriteLine(produto.ToString("F2", CultureInfo.InvariantCulture));
             Console.WriteLine(ultimoNome);
             Console.WriteLine(idade);
             Console.WriteLine(altura.ToString("F2", CultureInfo.InvariantCulture));
