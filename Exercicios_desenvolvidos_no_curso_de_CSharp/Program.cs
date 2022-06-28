@@ -8,9 +8,9 @@ namespace Exercicios_desenvolvidos_no_curso_de_CSharp {
 
             //exercicio1.Ex1();
 
-            Exercicio2 exercicio2 = new Exercicio2();
+            //Exercicio2 exercicio2 = new Exercicio2();
 
-            exercicio2.Ex2();
+            //exercicio2.Ex2();
         }
     }
 }
