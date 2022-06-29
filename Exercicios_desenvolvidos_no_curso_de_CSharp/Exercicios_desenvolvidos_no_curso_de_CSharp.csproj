@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Exercicio1.cs" />
+    <Compile Remove="Exercicio2.cs" />
+  </ItemGroup>
+
 </Project>
