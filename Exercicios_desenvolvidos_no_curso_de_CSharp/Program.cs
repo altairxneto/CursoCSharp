@@ -3,6 +3,7 @@ using SegundoExercicio;
 using ExercicioProposto1;
 using ExercicioProposto2;
 using ExercicioProposto3;
+using ExercicioProposto4;
 
 namespace Exercicios_desenvolvidos_no_curso_de_CSharp {
     public class Program {
@@ -21,6 +22,9 @@ namespace Exercicios_desenvolvidos_no_curso_de_CSharp {
 
             //ExercicioP3 exercicio = new ExercicioP3();
             //exercicio.ExP3();
+
+            ExercicioP4 exercicio = new ExercicioP4();
+            exercicio.ExP4();
         }
     }
 }
