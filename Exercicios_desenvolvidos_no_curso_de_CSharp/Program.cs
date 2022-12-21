@@ -11,8 +11,6 @@ using TesteDeCodigo;
 namespace Exercicios_desenvolvidos_no_curso_de_CSharp {
     public class Program {
         public static void Main(string[] args) {
-            Revisao teste = new Revisao();
-            teste.Rev();
 
             //Exercicio1 exercicio = new Exercicio1();
             //exercicio.Ex1();
