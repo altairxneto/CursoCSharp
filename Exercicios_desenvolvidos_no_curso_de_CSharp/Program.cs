@@ -6,7 +6,6 @@ using ExercicioProposto3;
 using ExercicioProposto4;
 using ExercicioProposto5;
 using ExercicioProposto6;
-using TesteDeCodigo;
 
 namespace Exercicios_desenvolvidos_no_curso_de_CSharp {
     public class Program {
