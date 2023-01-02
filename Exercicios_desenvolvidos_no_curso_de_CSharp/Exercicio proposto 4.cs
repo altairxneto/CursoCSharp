@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace ExercicioProposto4 {
+namespace ExercicioProposto {
     public class ExercicioP4 {
         public void ExP4() {
             Console.WriteLine("Digite o numero do funcionário: ");

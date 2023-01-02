@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ExercicioProposto1 {
+namespace ExercicioProposto {
     public class ExercicioP1 {
         public void ExP1(){
             Console.WriteLine("Digite os dois valores inteiros para efetuar a soma!");

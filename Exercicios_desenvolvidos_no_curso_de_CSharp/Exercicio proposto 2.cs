@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace ExercicioProposto2 {
+namespace ExercicioProposto {
     public class ExercicioP2 {
         public void ExP2() {
             Console.WriteLine("Digite o valor do raio do circulo: ");

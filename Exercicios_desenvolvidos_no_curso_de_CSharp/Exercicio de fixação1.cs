@@ -1,8 +1,7 @@
-﻿using PrimeiroExercicio;
-using System;
+﻿using System;
 using System.Globalization;
 
-namespace PrimeiroExercicio {
+namespace ExercicioFixacao {
     public class Exercicio1 {
         public void Ex1() {
             string produto1 = "Computador";
@@ -22,7 +21,7 @@ namespace PrimeiroExercicio {
             Console.WriteLine($"Registro: {idade} de idade, código {codigo} e genero: {genero} \n");
             Console.WriteLine($"Medida com oito casas decimais: {medida:F8} ");
             Console.WriteLine($"Arredondado(tres casas decimais): {medida:F3}");
-            Console.WriteLine("Separados decimal invariant Culture: "+medida.ToString("F3", CultureInfo.InvariantCulture));
+            Console.WriteLine("Separados decimal invariant Culture: " + medida.ToString("F3", CultureInfo.InvariantCulture));
         }
     }
 }

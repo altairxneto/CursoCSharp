@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace ExercicioProposto5 {
+namespace ExercicioProposto {
     public class ExercicioP5 {
         public void ExP5() {
             Console.WriteLine("Detalhes peça 1. Digite o código da peça, o número de peças e o valor de cada peça:");

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace ExercicioProposto6 {
+namespace ExercicioProposto {
     public class ExercicioP6 {
         public void ExP6() {
             Console.WriteLine("Digite os valores de A, B e C respectivamente em uma única linha:");

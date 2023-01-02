@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace SegundoExercicio {
+namespace ExercicioFixacao {
     public class Exercicio2 {
         public void Ex2() {
             Console.WriteLine("Entre com seu nome completo:");

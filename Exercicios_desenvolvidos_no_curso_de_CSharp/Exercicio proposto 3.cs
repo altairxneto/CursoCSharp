@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ExercicioProposto3 {
+namespace ExercicioProposto {
     public class ExercicioP3 {
         public void ExP3() {
             Console.WriteLine("Digite o valor das variáveis A, B, C e D para efetuar a diferença do produto de A e B por C e D: ");
