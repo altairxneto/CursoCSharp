@@ -1,10 +1,10 @@
-﻿using ExercicioProposto;
+﻿using System;
 
-namespace ExercicioProposto {
-    public class ExercicioP7 {
-        public void ExP7() {
-            PessoaExP7 primeiraPessoa = new PessoaExP7();
-            PessoaExP7 segundaPessoa = new PessoaExP7();
+namespace ExercicioFixacao {
+    public class ExercicioF3 {
+        public void ExF3() {
+            PessoaExF3 primeiraPessoa = new PessoaExF3();
+            PessoaExF3 segundaPessoa = new PessoaExF3();
 
             Console.WriteLine("Digite o nome da primeira pessoa e a idade respectivamente:");
             string informacoesPessoaUm = Console.ReadLine();
