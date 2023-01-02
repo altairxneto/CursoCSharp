@@ -3,8 +3,8 @@
 namespace ExercicioProposto {
     public class ExercicioP7 {
         public void ExP7() {
-            Pessoa primeiraPessoa = new Pessoa();
-            Pessoa segundaPessoa = new Pessoa();
+            PessoaExP7 primeiraPessoa = new PessoaExP7();
+            PessoaExP7 segundaPessoa = new PessoaExP7();
 
             Console.WriteLine("Digite o nome da primeira pessoa e a idade respectivamente:");
             string informacoesPessoaUm = Console.ReadLine();
