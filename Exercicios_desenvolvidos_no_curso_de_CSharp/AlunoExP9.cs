@@ -11,7 +11,7 @@ namespace ExercicioProposto {
         }
 
         public override string ToString() {
-            if (MediaFinal() > 60) {
+            if (MediaFinal() >= 60) {
                 return "Nome: "+Nome+", Notas: "+NotaUm+", "+NotaDois+", "+NotaTres+", Nota final: "+MediaFinal().ToString("F2", CultureInfo.InvariantCulture)+". APROVADO!";
             }
             else {
