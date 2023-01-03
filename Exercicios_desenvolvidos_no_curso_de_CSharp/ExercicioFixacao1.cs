@@ -2,8 +2,8 @@
 using System.Globalization;
 
 namespace ExercicioFixacao {
-    public class Exercicio1 {
-        public void Ex1() {
+    public class ExercicioF1 {
+        public void ExF1() {
             string produto1 = "Computador";
             string produto2 = "Mesa de escritório";
 

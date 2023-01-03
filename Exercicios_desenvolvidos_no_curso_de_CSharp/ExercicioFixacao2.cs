@@ -2,8 +2,8 @@
 using System.Globalization;
 
 namespace ExercicioFixacao {
-    public class Exercicio2 {
-        public void Ex2() {
+    public class ExercicioF2 {
+        public void ExF2() {
             Console.WriteLine("Entre com seu nome completo:");
             string nome = Console.ReadLine();
 

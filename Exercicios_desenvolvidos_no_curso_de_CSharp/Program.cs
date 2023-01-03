@@ -5,11 +5,14 @@ namespace Exercicios_desenvolvidos_no_curso_de_CSharp {
     public class Program {
         public static void Main(string[] args) {
 
-            //Exercicio1 exercicio = new Exercicio1();
-            //exercicio.Ex1();
+            //ExercicioF1 exercicio = new ExercicioF1();
+            //exercicio.ExF1();
 
-            //Exercicio2 exercicio = new Exercicio2();
-            //exercicio.Ex2();
+            //ExercicioF2 exercicio = new ExercicioF2();
+            //exercicio.ExF2();
+
+            //ExercicioF3 exercicio = new ExercicioF3();
+            //exercicio.ExF3();
 
             //ExercicioP1 exercicio = new ExercicioP1();
             //exercicio.ExP1();
@@ -29,8 +32,6 @@ namespace Exercicios_desenvolvidos_no_curso_de_CSharp {
             //ExercicioP6 exercicio = new ExercicioP6();
             //exercicio.ExP6();
 
-            ExercicioF3 exercicio = new ExercicioF3();
-            exercicio.ExF3();
         }
     }
 }
