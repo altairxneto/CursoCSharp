@@ -7,10 +7,10 @@ namespace ExercicioProposto {
             RetanguloExP7 dadosRetangulo = new RetanguloExP7();
 
             Console.WriteLine("Digite o valor da altura do retangulo: ");
-            dadosRetangulo.altura = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            dadosRetangulo.Altura = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
             Console.WriteLine("Digite o valor da largura do retangulo: ");
-            dadosRetangulo.largura = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            dadosRetangulo.Largura = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
             Console.WriteLine("AREA: " + dadosRetangulo.AreaRetangulo().ToString("F2", CultureInfo.InvariantCulture));
             Console.WriteLine("PERIMETRO: " + dadosRetangulo.PerimetroRetangulo().ToString("F2", CultureInfo.InvariantCulture));

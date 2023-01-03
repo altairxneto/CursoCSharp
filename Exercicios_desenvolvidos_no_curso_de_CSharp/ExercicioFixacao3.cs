@@ -11,26 +11,26 @@ namespace ExercicioFixacao {
 
             string[] separarInformacoesUm = informacoesPessoaUm.Split(' ');
 
-            primeiraPessoa.nome = separarInformacoesUm[0];
-            primeiraPessoa.idade = int.Parse(separarInformacoesUm[1]);
+            primeiraPessoa.Nome = separarInformacoesUm[0];
+            primeiraPessoa.Idade = int.Parse(separarInformacoesUm[1]);
 
             Console.WriteLine("Digite o nome da segunda pessoa e a idade respectivamente:");
             string informacoesPessoaDois = Console.ReadLine();
 
             string[] separarInformacoesDois = informacoesPessoaDois.Split(' ');
 
-            segundaPessoa.nome = separarInformacoesDois[0];
-            segundaPessoa.idade = int.Parse(separarInformacoesDois[1]);
+            segundaPessoa.Nome = separarInformacoesDois[0];
+            segundaPessoa.Idade = int.Parse(separarInformacoesDois[1]);
 
             Console.WriteLine("Primeira pessoa:");
-            Console.WriteLine("Nome: "+primeiraPessoa.nome+" Idade: "+primeiraPessoa.idade);
+            Console.WriteLine("Nome: "+primeiraPessoa.Nome+" Idade: "+primeiraPessoa.Idade);
 
             Console.WriteLine();
 
             Console.WriteLine("Segunda pessoa:");
-            Console.WriteLine("Nome: " + segundaPessoa.nome + " Idade: " + segundaPessoa.idade);
+            Console.WriteLine("Nome: " + segundaPessoa.Nome + " Idade: " + segundaPessoa.Idade);
 
-            if (primeiraPessoa.idade > segundaPessoa.idade) {
+            if (primeiraPessoa.Idade > segundaPessoa.Idade) {
                 Console.WriteLine("Pessoa mais velha: Primeira");
             }
             else {

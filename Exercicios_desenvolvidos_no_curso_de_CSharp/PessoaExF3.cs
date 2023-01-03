@@ -1,6 +1,6 @@
 ﻿namespace ExercicioFixacao {
     class PessoaExF3 {
-        public string nome;
-        public int idade;
+        public string Nome;
+        public int Idade;
     }
 }
