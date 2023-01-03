@@ -41,6 +41,8 @@ namespace Exercicios_desenvolvidos_no_curso_de_CSharp {
             //ExercicioP9 exercicio = new ExercicioP9();
             //exercicio.ExP9();
 
+            ExercicioP10 exercicio = new ExercicioP10();
+            exercicio.ExP10();
         }
     }
 }
