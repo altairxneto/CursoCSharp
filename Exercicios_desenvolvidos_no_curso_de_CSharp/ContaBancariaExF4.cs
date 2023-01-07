@@ -20,7 +20,13 @@ namespace ExercicioFixacao {
         }
 
         public override string ToString() {
-            return "Conta " + NumeroConta + ", Titular: " + NomeTitular + ", Saldo: $" + SaldoConta.ToString("F2", CultureInfo.InvariantCulture) + " reais";
+            return "Conta " 
+                + NumeroConta 
+                + ", Titular: " 
+                + NomeTitular 
+                + ", Saldo: $" 
+                + SaldoConta.ToString("F2", CultureInfo.InvariantCulture) 
+                + " reais";
         }
     }
 }
