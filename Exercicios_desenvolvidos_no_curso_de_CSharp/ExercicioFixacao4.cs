@@ -15,7 +15,7 @@ namespace ExercicioFixacao {
             Console.WriteLine("Entre o titular da conta:");
             string nomeTitular = Console.ReadLine();
 
-            ContaBancariaExF4 pessoa = new ContaBancariaExF4(numeroDaConta, nomeTitular);
+            ContaBancariaExF4 pessoa;
 
             Console.WriteLine("Haverá um deposito inicial? Digite sim ou não:");
             string respostaDeposito = Console.ReadLine();
@@ -24,7 +24,10 @@ namespace ExercicioFixacao {
                 Console.WriteLine("Digite o valor do deposito:");
                 valorDeposito = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-                pessoa.Deposito(valorDeposito);
+                pessoa = new ContaBancariaExF4(numeroDaConta, nomeTitular, valorDeposito);
+            }
+            else {
+                pessoa = new ContaBancariaExF4(numeroDaConta, nomeTitular);
             }
 
             Console.WriteLine("Dados da conta:");
