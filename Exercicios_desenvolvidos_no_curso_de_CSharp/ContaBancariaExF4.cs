@@ -2,25 +2,25 @@
 
 namespace ExercicioFixacao {
     class ContaBancariaExF4 {
-        private double _saldoConta;
-        private int _numeroConta;
-        public string NomeTitular;
+        public double SaldoConta { get; private set; }
+        public int NumeroConta { get; private set; }
+        public string NomeTitular { get; set; }
 
-        public ContaBancariaExF4(string nomePessoa, int numeroDaConta) {
-            NomeTitular = nomePessoa;
-            _numeroConta = numeroDaConta;
+        public ContaBancariaExF4(int numero, string nome) {
+            NumeroConta = numero;
+            NomeTitular = nome;
         }
 
         public void Deposito(double valor) {
-            _saldoConta += valor;
+            SaldoConta += valor;
         }
 
         public void Saque(double valor) {
-            _saldoConta = _saldoConta - valor - 5;
+            SaldoConta = SaldoConta - valor - 5;
         }
 
         public override string ToString() {
-            return "Conta " + _numeroConta + ", Titular: " + NomeTitular + ", Saldo: $" + _saldoConta.ToString("F2", CultureInfo.InvariantCulture) + " reais";
+            return "Conta " + NumeroConta + ", Titular: " + NomeTitular + ", Saldo: $" + SaldoConta.ToString("F2", CultureInfo.InvariantCulture) + " reais";
         }
     }
 }

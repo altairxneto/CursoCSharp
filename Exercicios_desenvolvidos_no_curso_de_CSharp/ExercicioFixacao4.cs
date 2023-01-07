@@ -10,12 +10,12 @@ namespace ExercicioFixacao {
             Console.WriteLine("Olá, informe os dados do cliente para que seja feito o cadastro!");
 
             Console.WriteLine("Entre o número da conta:");
-            int numConta = int.Parse(Console.ReadLine());
+            int numeroDaConta = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Entre o titular da conta:");
             string nomeTitular = Console.ReadLine();
 
-            ContaBancariaExF4 pessoa = new ContaBancariaExF4(nomeTitular, numConta);
+            ContaBancariaExF4 pessoa = new ContaBancariaExF4(numeroDaConta, nomeTitular);
 
             Console.WriteLine("Haverá um deposito inicial? Digite sim ou não:");
             string respostaDeposito = Console.ReadLine();
