@@ -12,7 +12,7 @@ namespace ExercicioFixacao {
         }
 
         public ContaBancariaExF4(int numero, string nome, double valorInicial):this(numero, nome) {
-            SaldoConta = valorInicial;
+            Deposito(valorInicial);
         }
 
         public void Deposito(double valor) {
