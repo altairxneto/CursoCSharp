@@ -44,10 +44,13 @@ namespace Exercicios_desenvolvidos_no_curso_de_CSharp {
 
             ExercicioP10 exercicio = new ExercicioP10();
             exercicio.ExP10();
-            */
 
             ExercicioF4 exercicio = new ExercicioF4();
             exercicio.ExF4();
+            */
+
+            ExercicioF5 exercicio = new ExercicioF5();
+            exercicio.ExF5();
         }
     }
 }
