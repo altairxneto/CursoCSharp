@@ -10,7 +10,7 @@ namespace ExercicioFixacao {
             Console.WriteLine("Quantos quartos tem na sua casa?");
             int quartos = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Entre com o prelo de um produto: ");
+            Console.WriteLine("Entre com o preço de um produto: ");
             double produto = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
             Console.WriteLine("Entre com seu último nome, idade e altura (mesma linha): ");
