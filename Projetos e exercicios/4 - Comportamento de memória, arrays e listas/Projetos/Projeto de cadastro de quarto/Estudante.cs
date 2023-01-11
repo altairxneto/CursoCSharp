@@ -1,5 +1,5 @@
 ﻿namespace Projetos {
-    internal class Estudante {
+    class Estudante {
         public string Nome { get; set; }
         public string Email { get; set; }
 
