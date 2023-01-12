@@ -1,7 +1,7 @@
 ﻿using System.Globalization;
 
 namespace Projetos {
-    class ContaBancaria {
+    public class ContaBancaria {
         public double SaldoConta { get; private set; }
         public int NumeroConta { get; private set; }
         public string NomeTitular { get; set; }
