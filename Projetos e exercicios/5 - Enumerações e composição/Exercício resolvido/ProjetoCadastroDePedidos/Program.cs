@@ -1,7 +1,6 @@
-﻿using System;
-using System.Globalization;
-using ProjetoCadastroDePedidos.Entities;
+﻿using ProjetoCadastroDePedidos.Entities;
 using ProjetoCadastroDePedidos.Entities.Enums;
+using System.Globalization;
 
 namespace ProjetoCadastroDePedidos {
     class Program {
