@@ -14,7 +14,7 @@
         }
 
         public override string ToString() {
-            return "Client: " + Name + " " + BirthDate.Date.ToString() + " - " + Email;
+            return "Client: " + Name + " " + BirthDate.ToShortDateString().ToString() + " - " + Email;
         }
     }
 }
