@@ -1,7 +1,6 @@
 ﻿using ProjetoCadastroDePedidos.Entities.Enums;
-using System.Collections.Generic;
-using System.Text;
 using System.Globalization;
+using System.Text;
 
 namespace ProjetoCadastroDePedidos.Entities {
     class Order {
