@@ -11,6 +11,7 @@ namespace ProjetoContribuintesDeImpostos.Entities {
 
         public override double ImpostoPago() {
             double impostos = 0;
+
             if(RendaAnual < 20000) {
                 impostos = RendaAnual * 15 / 100;
             }
