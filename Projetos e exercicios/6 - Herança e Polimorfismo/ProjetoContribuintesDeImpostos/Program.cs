@@ -1,10 +1,60 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ProjetoContribuintesDeImpostos.Entities;
+using System.Globalization;
 
 namespace ProjetoContribuintesDeImpostos {
-    internal class Program {
+    class Program {
+        static void Main(string[] args) {
+            List<Contribuintes> list = new List<Contribuintes>();
+
+            Console.Write("Digite o número de contribuintes: ");
+            int numeroContribuintes = int.Parse(Console.ReadLine());
+
+            Console.Clear();
+
+            for(int contador = 1; contador <= numeroContribuintes; contador++) {
+                Console.WriteLine($"Contribuinte #{contador}:");
+                Console.Write("Pessoa juridica ou física (j/f): ");
+                char ch = char.Parse(Console.ReadLine());
+
+                if(ch == 'f') {
+                    Console.Write("Nome: ");
+                    string nome = Console.ReadLine();
+
+                    Console.Write("Renda anual: ");
+                    double rendaAnual = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+                    Console.Write("Gastos com saúde: ");
+                    double gastoSaude = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+                    list.Add(new PessoaFisica(nome, rendaAnual, gastoSaude));
+                }
+                else {
+                    Console.Write("Nome: ");
+                    string nome = Console.ReadLine();
+
+                    Console.Write("Renda anual: ");
+                    double rendaAnual = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+                    Console.Write("Número de funcionários: ");
+                    int numFuncionarios = int.Parse(Console.ReadLine());
+
+                    list.Add(new PessoaJuridica(nome, rendaAnual, numFuncionarios));
+                }
+            }
+
+            Console.Clear();
+            Console.WriteLine("IMPOSTOS PAGOS: ");
+
+            double totalImpostos = 0;
+
+            foreach(Contribuintes contribuintes in list) {
+                Console.WriteLine(contribuintes.Nome + ": $ " + contribuintes.ImpostoPago().ToString("F2", CultureInfo.InvariantCulture));
+
+                totalImpostos += contribuintes.ImpostoPago();
+            }
+
+            Console.WriteLine("TOTAL DE IMPOSTOS PAGOS: $ " + totalImpostos.ToString("F2", CultureInfo.InvariantCulture));
+
+        }
     }
 }
