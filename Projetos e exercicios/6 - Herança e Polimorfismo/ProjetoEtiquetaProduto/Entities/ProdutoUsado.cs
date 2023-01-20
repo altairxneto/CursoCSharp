@@ -11,7 +11,7 @@ namespace ProjetoEtiquetaProduto.Entities {
         }
 
         public override string PriceTag() {
-            return Name + " (used) $ " + Price.ToString("F2", CultureInfo.InvariantCulture) + " (Manufacture date: " + DataFabricado.ToShortDateString + ")";
+            return Name + " (used) $ " + Price.ToString("F2", CultureInfo.InvariantCulture) + " (Manufacture date: " + DataFabricado.ToShortDateString() + ")";
         }
     }
 }
