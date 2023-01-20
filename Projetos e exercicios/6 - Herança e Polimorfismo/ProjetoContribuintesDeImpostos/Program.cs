@@ -9,9 +9,9 @@ namespace ProjetoContribuintesDeImpostos {
             Console.Write("Digite o número de contribuintes: ");
             int numeroContribuintes = int.Parse(Console.ReadLine());
 
-            Console.Clear();
-
             for(int contador = 1; contador <= numeroContribuintes; contador++) {
+                Console.Clear();
+
                 Console.WriteLine($"Contribuinte #{contador}:");
                 Console.Write("Pessoa juridica ou física (j/f): ");
                 char ch = char.Parse(Console.ReadLine());
@@ -28,7 +28,7 @@ namespace ProjetoContribuintesDeImpostos {
 
                     list.Add(new PessoaFisica(nome, rendaAnual, gastoSaude));
                 }
-                else {
+                else if(ch == 'j') {
                     Console.Write("Nome: ");
                     string nome = Console.ReadLine();
 
@@ -39,6 +39,9 @@ namespace ProjetoContribuintesDeImpostos {
                     int numFuncionarios = int.Parse(Console.ReadLine());
 
                     list.Add(new PessoaJuridica(nome, rendaAnual, numFuncionarios));
+                }
+                else {
+                    Console.WriteLine("Inválido!");
                 }
             }
 
