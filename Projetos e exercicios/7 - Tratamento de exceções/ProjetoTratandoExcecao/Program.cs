@@ -1,5 +1,6 @@
 ﻿using ProjetoTratandoExcecao.Entities;
 using System.Globalization;
+using ProjetoTratandoExcecao.Entities.Exceptions;
 
 namespace ProjetoTratandoExcecao {
     class Program {
@@ -31,7 +32,7 @@ namespace ProjetoTratandoExcecao {
 
                 Console.WriteLine(conta);
             }
-            catch (Exception ex) {
+            catch (Excecoes ex) {
                 Console.WriteLine("Erro no saque: " + ex.Message);
             }
         }
