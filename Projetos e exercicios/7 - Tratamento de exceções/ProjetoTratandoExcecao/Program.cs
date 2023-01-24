@@ -4,31 +4,36 @@ using System.Globalization;
 namespace ProjetoTratandoExcecao {
     class Program {
         static void Main(string[] args) {
-            Console.WriteLine("Digite os dados da conta.");
 
-            Console.Write("Numero da conta: ");
-            int numero = int.Parse(Console.ReadLine());
+            try {
+                Console.WriteLine("Digite os dados da conta.");
 
-            Console.Write("Titular: ");
-            string nome = Console.ReadLine();
+                Console.Write("Numero da conta: ");
+                int numero = int.Parse(Console.ReadLine());
 
-            Console.Write("Saldo inicial: ");
-            double saldo = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                Console.Write("Titular: ");
+                string nome = Console.ReadLine();
 
-            Console.Write("Limite de saque: ");
-            double limite = double.Parse(Console.ReadLine() , CultureInfo.InvariantCulture);
+                Console.Write("Saldo inicial: ");
+                double saldo = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-            Conta conta = new Conta(numero, nome, saldo, limite);
+                Console.Write("Limite de saque: ");
+                double limite = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-            Console.Clear();
+                Conta conta = new Conta(numero, nome, saldo, limite);
 
-            Console.Write("Digite a quantia para saque: ");
-            double quantiaSaque = double.Parse(Console.ReadLine());
+                Console.Clear();
 
-            conta.Saque(quantiaSaque);
+                Console.Write("Digite a quantia para saque: ");
+                double quantiaSaque = double.Parse(Console.ReadLine());
 
-            Console.WriteLine(conta);
+                conta.Saque(quantiaSaque);
 
+                Console.WriteLine(conta);
+            }
+            catch (Exception ex) {
+                Console.WriteLine("Erro no saque: " + ex.Message);
+            }
         }
     }
 }
