@@ -1,5 +1,6 @@
 ﻿using System.Globalization;
 using System.Text;
+using ProjetoTratandoExcecao.Entities.Exceptions;
 
 namespace ProjetoTratandoExcecao.Entities {
     class Conta {
@@ -22,6 +23,10 @@ namespace ProjetoTratandoExcecao.Entities {
         }
 
         public void Saque(double quantia) {
+            if(quantia > SaqueLimite) {
+                throw new Excecoes("A quantia ultrapassa o limite de saque!");
+            }
+
             Saldo -= quantia;
         }
 
