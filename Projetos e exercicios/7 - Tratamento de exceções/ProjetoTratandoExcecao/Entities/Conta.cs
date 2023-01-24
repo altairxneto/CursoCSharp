@@ -27,6 +27,10 @@ namespace ProjetoTratandoExcecao.Entities {
                 throw new Excecoes("A quantia ultrapassa o limite de saque!");
             }
 
+            if(quantia > Saldo) {
+                throw new Excecoes("Saldo insuficiente para saque.");
+            }
+
             Saldo -= quantia;
         }
 
