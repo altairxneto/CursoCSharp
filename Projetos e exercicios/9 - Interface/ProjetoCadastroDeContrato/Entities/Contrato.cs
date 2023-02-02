@@ -1,4 +1,4 @@
-﻿
+﻿using System.Globalization;
 using System.Text;
 
 namespace Projeto.Entities {
@@ -16,5 +16,13 @@ namespace Projeto.Entities {
             ValorTotal = valorTotal;
         }
 
+        public override string ToString() {
+            StringBuilder sr = new StringBuilder();
+            foreach(Prestacao prestacao in prestacoes) {
+                sr.AppendLine(prestacao.DataDeVencimento.ToShortDateString() + " - " + prestacao.ValorDaPrestacao.ToString("F2", CultureInfo.InvariantCulture));
+            }
+
+            return sr.ToString();
+        }
     }
 }
