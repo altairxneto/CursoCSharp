@@ -6,7 +6,7 @@ namespace Projeto.Entities {
         public int Numero { get; private set; }
         public DateTime DataDoContrato { get; private set; }
         public double ValorTotal { get; private set; }
-        public List<Prestacao> prestacoes = new List<Prestacao>();
+        internal List<Prestacao> prestacoes = new List<Prestacao>();
 
         public Contrato() { }
 

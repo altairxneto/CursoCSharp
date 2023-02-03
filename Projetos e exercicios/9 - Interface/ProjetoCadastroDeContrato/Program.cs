@@ -20,7 +20,7 @@ namespace Projeto {
             Console.Write("Digite o número de prestações: ");
             int numeroPrestacao = int.Parse(Console.ReadLine());
 
-            ServicoDeContrato servico = new ServicoDeContrato(new PagamentoPaypal());
+            ServicoDeContrato servico = new ServicoDeContrato(new ServicoPagamentoPaypal());
 
             servico.ProcessamentoContrato(contrato, numeroPrestacao);
 
